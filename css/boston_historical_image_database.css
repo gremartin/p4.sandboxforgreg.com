@@ -9,14 +9,36 @@
 	height: 70px;
 }
 #menu{
+	margin-left: 160px;
 	text-align: right;
+}
+#greeting{
+	float: left;
+	margin-left: 20px;
 }
 #content{
 	text-align: center;
+}
+#photo_display{
+	height: 320px;
+
+}
+#preview_image{
+
+	height:300px;
 }
 body{
 	background-color: LightBlue;
 }
 .error p{
 	color:red;
+}
+.navigation{
+	width: 100px;
+	height: 20px;
+	border: .25px solid black;
+	background-color: red;
+	text-align:center;
+	cursor: pointer;
+	float:left;
 }

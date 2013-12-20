@@ -106,7 +106,7 @@ class users_controller extends base_controller{
 		//create array to insert into users table
 		$data = Array("token" => $new_token);
 		//insert new token
-		DB::instance(DB_NAME)->update("users", $data, "'WHERE token =".$this->user->token."'");
+		DB::instance(DB_NAME)->update("users", $data, "WHERE token ='".$this->user->token."'");
 		//log user out
 		setcookie("token", $token, strtotime('-1 year'), '/');
 		//send user back to main page

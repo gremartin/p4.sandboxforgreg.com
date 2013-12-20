@@ -18,24 +18,25 @@
 		<div id ='header'>			
 			
 			<div id = 'menu'>	
-				<?php if($user) echo 'Hello, '.$user->first_name.'!'?>
+				
 					
-				<a href='/'>Home</a>
+				<a href='/'><div class ="navigation">Home</div></a>
 				
 				<!-- Menu for logged in users -->
 				<?php if($user): ?>
 					
-					<a href='/photos/gallery'>View Gallery</a>
-					<a href='/photos/add'>Add Photos</a>
-					<a href='/users/logout'>Logout</a>
-					<a href='/users/profile'>Profile</a>
+					<a href='/photos/gallery'><div class ="navigation">View Gallery</div></a>
+					<a href='/photos/add'><div class ="navigation">Add Photos</div></a>
+					<a href='/users/logout'><div class ="navigation">Logout</div></a>
+					<a href='/users/profile'><div class ="navigation">Profile</div></a>
 				<?php else: ?>
 				<!-- Menu for users not logged in -->
-					<a href='/photos/gallery'>View Gallery</a>
-					<a href='/users/signup'>Sign up</a>
-					<a href='/users/login'>Log in</a>
+					<a href='/photos/gallery'><div class ="navigation">View Gallery</div></a>
+					<a href='/users/signup'><div class ="navigation">Sign up</div></a>
+					<a href='/users/login'><div class ="navigation">Log in</div></a>
 					
 				<?php endif; ?>
+				<div id = "greeting"><?php if($user) echo 'Hello, '.$user->first_name.'!'?></div>
 			</div>  <!-- end menu div-->
 		</div>	<!--end header div-->
 		
