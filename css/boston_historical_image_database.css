@@ -3,10 +3,9 @@
 	width: 860px;
 	margin-left: 80px;
 	margin-right: 80px;
-
 }
 #header{
-	height: 70px;
+	height: 20px;
 }
 #menu{
 	margin-left: 160px;
@@ -18,17 +17,65 @@
 }
 #content{
 	text-align: center;
+	width: 860px;
+	height: 800px;
+}
+#add_photo_header{
+	
+}
+#add_photo_left{
+	margin-left: 20px;
+	float: left;
+}
+#add_photo_right{
+	float: left;
+	width:300px;
+	text-align: left;
+	
+}
+#add_photo_footer{
+	clear: left;
+	width:860px;
+	height: 100px;
+}
+#user_photo{
+	background-color: white;
+	border: 1px solid black;
 }
 #photo_display{
 	height: 320px;
-
+	width: 500px;
+	background-color: white;
 }
 #preview_image{
 
 	height:300px;
+	
+}
+#photo_form{
+	width: 500px;
+}
+#photo_info{	
+	width: 300px;
+	margin-left: 40px;	
+}
+#photo_description{
+	width: 300px;
+	height: 105px;
+}
+#save_btn{
+	margin-left: 100px;
+}
+#cancel_btn{
+	margin-left: 160px;
+	width:  150px;
+	background-color: red;
 }
 body{
 	background-color: LightBlue;
+}
+.photo_text{
+	width: 300px;
 }
 .error p{
 	color:red;

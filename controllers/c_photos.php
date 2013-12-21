@@ -23,4 +23,8 @@ class photos_controller extends base_controller{
 		echo $photo_file;
 	
 	}
+	public function p_add_text(){
+	
+	
+	}
 }
