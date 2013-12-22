@@ -25,12 +25,13 @@
 		<label for = "photo_year">Year</label>
 		<input class="photo_text" id ="photo_year" type='text' name = "year"><br><br>			
 		<label for = "photo_description">Description</label><br>
-		<textarea id ="photo_description" name='description'>Enter a brief description</textarea><br><br>
+		<textarea class="photo_text" id ="photo_description" name='description'></textarea><br><br>
+		<input class="photo_text" id= "photo_extension" type='hidden' name="extension">
 		<input id="save_btn" type='submit' value="Save Photo">
 	</form>
-	
+	<div id = "results"></div>
 </div> <!-- end add_photo_right div -->
-<div id="add_photo_footer">
+<div id="add_photo_footer">	
 	<br>
 	<input id="cancel_btn" type='submit' value="Cancel">
 </div>
