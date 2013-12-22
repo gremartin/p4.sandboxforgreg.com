@@ -1,6 +1,6 @@
 @charset "utf-8";
 #page{
-	width: 860px;
+	width: 900px;
 	margin-left: 80px;
 	margin-right: 80px;
 }
@@ -8,7 +8,7 @@
 	height: 20px;
 }
 #menu{
-	margin-left: 160px;
+	margin-left: 210px;
 	text-align: right;
 }
 #greeting{
@@ -17,7 +17,7 @@
 }
 #content{
 	text-align: center;
-	width: 860px;
+	width: 900px;
 	height: 800px;
 }
 #add_photo_header{
@@ -49,7 +49,8 @@
 }
 #preview_image{
 
-	height:300px;
+	height:320px;
+	max-width: 500px;
 	
 }
 #photo_form{
@@ -76,6 +77,30 @@
 	width:  150px;
 	background-color: red;
 }
+#col_headers{
+	height: 60px;
+}
+#gallery_entries{
+	height: 110px;
+	background-color: lightgrey;
+}
+#image_div{
+	float: left;
+	clear: left;
+	width: 200px;
+}
+#sample_photo{
+	height: 100px;
+	max-width: 200px;
+}
+#large_photo{
+	height: 500px;
+	max-width: 800px;
+}
+.gallery_btn{
+	float:left;
+	margin-top: 30px;
+}
 body{
 	background-color: LightBlue;
 }
@@ -93,4 +118,24 @@ body{
 	text-align:center;
 	cursor: pointer;
 	float:left;
+}
+.col_1{
+	width: 200px;
+	float: left;
+}
+.col_2{
+	width: 150px;
+	float: left;
+}
+.col_3{
+	width: 150px;
+	float: left;
+}
+.col_4{
+	width: 150px;
+	float: left;
+}
+.col_5{
+	width: 200px;
+	float: left;
 }

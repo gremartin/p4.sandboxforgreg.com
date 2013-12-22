@@ -9,7 +9,7 @@
 	<br>
 	<!-- form to retrieve photo from user -->
 	<form id="photo_form" method='POST' enctype ="multipart/form-data" action='/photos/p_add'>
-		<input type="hidden" name="MAX_FILE_SIZE" value = "1000000"/> 
+		<!--<input type="hidden" name="MAX_FILE_SIZE" value = "100000000"/> -->
 		<input type='file' id='user_photo' name = 'user_photo'>	
 		<input id='sbmt_btn' type='submit' value="Upload Photo">
 	</form>
