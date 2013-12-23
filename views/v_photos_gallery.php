@@ -22,6 +22,7 @@
 		</div>
 		<br><a href='/photos/view_record/<?=$photo['photo_id']?>'><input class ="gallery_btn" type='submit' value="View Record"></a>
 		<?php if($user): ?>
+		<a href='/photos/edit/<?=$photo['photo_id']?>'><input class ="gallery_btn" type='submit' value="Edit"></a>
 		<a href='/photos/delete_photo/<?=$photo['photo_id']?>'><input class ="gallery_btn" type='submit' value="Delete"></a>
 		<?php endif; ?>
 	</article>

@@ -19,19 +19,17 @@
 	<!-- div for user to add text for database to associate with photo-->
 	<form id = "photo_info" method = 'POST' action='/photos/p_add_text'>
 		<label for = "photo_title">Title</label>
-		<input class="photo_text" id ="photo_title" type='text' name = "title"><br><br>		
+		<input class="photo_text" id ="photo_title" type='text' maxlength = "20" name = "title"><br><br>		
 		<label for = "photo_photographer">Photographer</label>
-		<input class="photo_text" id ="photo_photographer" type='text' name = "photographer"><br><br>			
+		<input class="photo_text" id ="photo_photographer" type='text' maxlength = "20" name = "photographer"><br><br>			
 		<label for = "photo_year">Year</label>
-		<input class="photo_text" id ="photo_year" type='text' name = "year"><br><br>			
+		<input class="photo_text" id ="photo_year" type='text' maxlength = "20" name = "year"><br><br>			
 		<label for = "photo_description">Description</label><br>
-		<textarea class="photo_text" id ="photo_description" name='description'></textarea><br><br>
+		<textarea class="photo_text" id ="photo_description" maxlength = "200" name='description'></textarea><br><br>
 		<input class="photo_text" id= "photo_extension" type='hidden' name="extension">
 		<input id="save_btn" type='submit' value="Save Photo">
 	</form>
 	<div id = "results"></div>
 </div> <!-- end add_photo_right div -->
 <div id="add_photo_footer">	
-	<br>
-	<input id="cancel_btn" type='submit' value="Cancel">
 </div>

@@ -33,6 +33,20 @@ class users_controller extends base_controller{
 			$this->template->content->messageID = $messageID;
 			echo $this->template;
 		}
+		else if(!strstr(($_POST['email']), "@" )){
+			$this->template->content = View::instance('v_users_signup_error');
+			$this->template->title = "Sign up Error";
+			$messageID = 2;
+			$this->template->content->messageID = $messageID;
+			echo $this->template;
+		}		
+		else if($_POST['password']!= $_POST['password_confirm']){
+			$this->template->content = View::instance('v_users_signup_error');
+			$this->template->title = "Sign up Error";
+			$messageID = 3;
+			$this->template->content->messageID = $messageID;
+			echo $this->template;
+		}
 		else{
 			# Insert user into database
 			$_POST['created'] = Time::now();
@@ -43,7 +57,7 @@ class users_controller extends base_controller{
 			
 			#Create an encrypted token via user's email address and random string
 			$_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
-			
+			unset($_POST['password_confirm']);
 			$user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 			#create variable to hold token value
 			$token = $_POST['token'];
@@ -111,5 +125,15 @@ class users_controller extends base_controller{
 		setcookie("token", $token, strtotime('-1 year'), '/');
 		//send user back to main page
 		Router::redirect("/");
+	}
+	public function profile(){
+				
+		//Setup view
+		$this->template->content = View::instance('v_users_profile');
+		$this->template->title = "Profile";
+		
+		//Render view
+		echo $this->template;
+		
 	}
 }
